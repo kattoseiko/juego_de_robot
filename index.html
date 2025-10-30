@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCRAPHEAL</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 5px solid #555;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    main {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .galeria img {
+      width: 150px;
+      border: 2px solid #000;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: #444;
+      color: #fff;
+    }
+
+    #juego-contenedor {
+      margin-top: 25px;
+      border: 2px dashed #000;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .testimonios {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #000;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+
+    .robot-destacado {
+      border: 1px solid #000;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SCRAPHEAL</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#robot">Tu Robot</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#modos">Modo de Juego</a></li>
+        <li><a href="#controles">Controles</a></li>
+        <li><a href="#jugar">Jugar</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#creditos">Créditos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Explora un mundo donde las máquinas piensan, sienten y luchan. El futuro ha comenzado, y tu robot está listo para ser activado.</p>
+    </section>
+
+    <section id="historia">
+      <h2>Historia del Juego</h2>
+      <p>En el año 2147, la humanidad ha confiado su supervivencia a inteligencias artificiales. Tú formas parte del proyecto <strong>NOVA</strong>, donde robots son entrenados para proteger las últimas ciudades humanas en un planeta en ruinas.</p>
+    </section>
+
+    <section id="robot">
+      <h2>Tu Robot</h2>
+      <div class="robot-destacado">
+        <h3>Unidad X-47 "Épsilon"</h3>
+        <p>Épsilon es una unidad modular con cuerpo de titanio, IA adaptable y capacidad para montar hasta 3 herramientas al mismo tiempo. Puede saltar, escanear, reparar y luchar con precisión quirúrgica.</p>
+      </div>
+    </section>
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="galeria">
+    <img src="imagenes/imagen1.png" alt="mundo">
+    <img src="imagenes/imagen2.png" alt="mundo">
+    <img src="imagenes/imagen3.png" alt="mundo">
+    <img src="imagenes/imagen4.png" alt="Mapa del mundo">
+  </div>
+</section>
+
+<style>
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  .galeria img {
+    width: 420px;
+    border: 5px solid #444;
+    border-radius: 12px;
+    transition: border-color 0.3s;
+  }
+
+  .galeria img:hover {
+    border-color: #008cff;
+  }
+</style>
+
+    <section id="modos">
+      <h2>Modo de Juego</h2>
+      <ul>
+        <li><strong>Misiones:</strong> Completa tareas estratégicas y rescata datos perdidos.</li>
+        <li><strong>Supervivencia:</strong> Enfréntate a oleadas de robots defectuosos.</li>
+        <li><strong>Mejoras:</strong> Recoge piezas y mejora velocidad, fuerza y procesamiento.</li>
+      </ul>
+    </section>
+
+    <section id="controles">
+      <h2>Controles</h2>
+      <ul>
+        <li><strong>TAB</strong> – Inventario</li>
+        <li><strong>A / ←</strong> – Izquierda</li>
+        <li><strong>D / →</strong> – Derecha</li>
+        <li><strong>Espacio  / ↑</strong> – saltar</li>     
+        <li><strong>click izquierdo</strong> – atacar</li>
+        <li><strong>E</strong> – recoger</li>
+      </ul>
+    </section>
+
+    <section id="jugar">
+      <h2>¡Jugar ahora!</h2>
+      <button onclick="iniciarJuego()">Iniciar Juego</button>
+      <div id="juego-contenedor">
+        <script src="index.exe"></script>
+       
+        <iframe src="v1/index.exe">JUEGO</iframe>
+      </div>
+
+
+    </section>
+
+    <section id="testimonios">
+      <h2>Opiniones de jugadores</h2>
+      <div class="testimonios">
+        <p>"Nunca pensé que aprender sobre robótica fuera tan divertido. ¡Increíble!" — <em>Ana Torres</em></p>
+        <p>"Mi robot Épsilon es una bestia. Superé todos los niveles en 3 días." — <em>Leo G.</em></p>
+        <p>"Diseño elegante, controles suaves y un reto constante. 10/10" — <em>Camila R.</em></p>
+      </div>
+    </section>
+
+    <section id="creditos">
+      <h2>Créditos</h2>
+      <ul>
+        <li><strong>Diseño y desarrollo:</strong> arnold / henry</li>
+        <li><strong>Ilustraciones:</strong> piskel / search art</li>
+        <li><strong>Idea original:</strong> Proyecto de Robótica 2025</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Juego de Robótica. Todos los derechos reservados.</p>
+  </footer>
+
+  <script
